@@ -1,4 +1,4 @@
-#### 简单爬虫：爬取爱卡汽车网汽车列表页(并发版)(2020-11-2有效)
+#### 简单爬虫：爬取爱卡汽车网汽车列表页(2020-11-2有效)
 ##### 爬取连接：https://newcar.xcar.com.cn/car
 ##### 本爬虫有一个并发版，架构大致相同，请参考：https://github.com/sgyouyou/spider_goroutine
 
