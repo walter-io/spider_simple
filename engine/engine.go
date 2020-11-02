@@ -12,6 +12,7 @@ func Run(seeds ...Request) {
 		requests = append(requests, r)
 	}
 
+	num := 0
 	// 遍历所有请求，根据对应的解析器进行解析
 	emptyDetail := Details{}
 	for len(requests) > 0 {
@@ -27,7 +28,8 @@ func Run(seeds ...Request) {
 			if item == emptyDetail { // 没内容不显示
 				continue
 			}
-			fmt.Printf("Parser Item: %v\n", item)
+			fmt.Printf("Parser Item #%d: %+v\n", num, item)
+			num++
 		}
 
 		// 把获取到的url加到requests中继续走流程
